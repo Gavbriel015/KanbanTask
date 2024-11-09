@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .dark select option {
+      background-color: #2B2C37;
+      color: #fff; 
+    }
+    .dark input,
+    .dark textarea,
+    .dark select {
+        border: rgb(102, 100, 100) solid 1px;
+    }
+  }
+
+
+@media (height < 945px) {
+    .mainboard {
+        height: 89.6vh;
+    }
+}
+@media (height < 830px) {
+    .mainboard {
+        height: 86vh;
+    }
+}
+@media (height < 750px) {
+    .mainboard {
+        height: 84vh;
+    }
+}
+
+::-webkit-scrollbar{
+    width: 6px;
+    height: 6px;
+
+}
+::-webkit-scrollbar-track {
+    background-color: whitesmoke;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #635FC7;
+    border-radius: 20px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #635FC7;
+}
+
+
+.index:hover > * {
+    color: #635FC7;
+    
+}
+
+.selectedButton {
+    background-color: #635FC7;
+
+}
+.selectedButton > * {
+    color: white;
+}
+
+.hoverTaskCard:hover > h1 {
+    color: #635FC7;
+}
+body {
+    overflow: hidden;
+}
